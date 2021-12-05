@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "dfx": "0.8.4",
+  "canisters": {
+    "barrier": {
+      "type": "motoko",
+      "main": "barrier.mo",
+      "dependencies": ["stopper"]
+    },
+    "stopper": {
+      "type": "motoko",
+      "main": "stopper.mo"
+    }
+  },
+  "defaults": {
+    "build": {
+      "packtool": "",
+      "args": ""
+    }
+  },
+  "networks": {
+    "local": {
+      "bind": "127.0.0.1:8000",
+      "type": "ephemeral"
+    }
+  }
+}
